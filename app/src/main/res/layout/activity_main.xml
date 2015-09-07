@@ -1,0 +1,122 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/snackbarPosition"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/permissionSuccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#139611"
+                android:elevation="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="Permission(s) has been granted!"
+                    android:textColor="#ffffff"/>
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnLocationFine"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:padding="16dp"
+                android:text="Location (fine)"
+                />
+
+            <Button
+                android:id="@+id/btnLocationCoarse"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:padding="16dp"
+                android:text="Location (coarse)"
+                />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:padding="16dp"
+                android:text="Camera"
+                />
+
+            <Button
+                android:id="@+id/btnContacts"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:padding="16dp"
+                android:text="Contacts/Profile"
+                />
+
+            <Button
+                android:id="@+id/btnMicrophone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:padding="16dp"
+                android:text="Microphone"
+                />
+
+            <Button
+                android:id="@+id/btnPhone"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:padding="16dp"
+                android:text="Phone"
+                />
+
+            <Button
+                android:id="@+id/btnStorageWrite"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:padding="16dp"
+                android:text="Storage (Write)"
+                />
+
+
+            <Button
+                android:id="@+id/btnRequestAll"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:padding="16dp"
+                android:text="Request All"
+                />
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
